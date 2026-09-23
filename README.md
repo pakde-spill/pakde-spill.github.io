@@ -41,4 +41,6 @@ Repository ini hanya boleh memuat teks kebijakan untuk publik dan aset tampilan 
 
 ## Pemeliharaan
 
+Gunakan Bahasa Indonesia sebagai bahasa utama untuk README, beranda, kebijakan, dan seluruh teks publik. Kode, nama file, URL, scope API, serta nama resmi produk atau kebijakan boleh mempertahankan bentuk aslinya jika diperlukan demi ketepatan.
+
 Pastikan isi beranda, kebijakan privasi, konfigurasi branding Google Auth Platform, dan perilaku aktual rclone selalu konsisten. Perbarui kebijakan sebelum memperluas scope atau mengubah cara penggunaan data pengguna Google. Validasi semua tautan secara lokal, commit dengan pesan yang jelas, lalu push ke `main`; GitHub Pages kemudian menerbitkan situs statis tersebut.
