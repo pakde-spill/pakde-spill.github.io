@@ -1,95 +1,95 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy policy for the Pakde Spill rclone desktop OAuth client.">
+  <meta name="description" content="Kebijakan privasi untuk OAuth desktop client Pakde Spill rclone.">
   <meta name="referrer" content="no-referrer">
   <link rel="canonical" href="https://pakde-spill.github.io/privacy.html">
   <link rel="stylesheet" href="/assets/style.css">
-  <title>Privacy Policy — Pakde Spill</title>
+  <title>Kebijakan Privasi — Pakde Spill</title>
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="/" aria-label="Pakde Spill home">
+    <a class="brand" href="/" aria-label="Beranda Pakde Spill">
       <span class="brand-mark" aria-hidden="true">PS</span>
       <span>Pakde Spill</span>
     </a>
-    <nav aria-label="Primary navigation">
-      <a href="/">Home</a>
-      <a aria-current="page" href="/privacy.html">Privacy</a>
-      <a href="/terms.html">Terms</a>
+    <nav aria-label="Navigasi utama">
+      <a href="/">Beranda</a>
+      <a aria-current="page" href="/privacy.html">Privasi</a>
+      <a href="/terms.html">Ketentuan</a>
     </nav>
   </header>
 
   <main class="policy">
     <header class="policy-heading">
-      <p class="eyebrow">Last updated 23 September 2026</p>
-      <h1>Privacy Policy</h1>
-      <p class="lead">This policy explains how the private Pakde Spill rclone desktop OAuth client accesses and uses Google user data.</p>
+      <p class="eyebrow">Terakhir diperbarui 23 September 2026</p>
+      <h1>Kebijakan Privasi</h1>
+      <p class="lead">Kebijakan ini menjelaskan cara OAuth desktop client privat Pakde Spill rclone mengakses dan menggunakan data pengguna Google.</p>
     </header>
 
     <section>
-      <h2>1. Scope</h2>
-      <p>The client is a personal utility operated by the Pakde Spill project owner. It connects rclone on the owner's Windows device to the owner's Google Drive for backup, integrity verification, and restore. It is not offered to the general public and does not support third-party accounts.</p>
+      <h2>1. Cakupan</h2>
+      <p>Client ini adalah utilitas pribadi yang dioperasikan oleh pemilik proyek Pakde Spill. Client menghubungkan rclone pada perangkat Windows milik pemilik dengan Google Drive milik pemilik untuk keperluan backup, verifikasi integritas, dan pemulihan. Client tidak ditawarkan kepada masyarakat umum dan tidak mendukung akun pihak ketiga.</p>
     </section>
 
     <section>
-      <h2>2. Google data accessed</h2>
-      <p>The client requests the Google Drive scope. This allows it to list files and folders, read file metadata and content, upload backup files, compare hashes, and download files for restore.</p>
-      <p>Full Drive scope is required because the backup set includes files that the owner uploaded manually before the OAuth client was configured. The rclone remote is operationally pinned to the dedicated Pakde Spill folder, but the OAuth scope itself is broader than that folder.</p>
+      <h2>2. Data Google yang diakses</h2>
+      <p>Client meminta scope Google Drive. Scope ini memungkinkan client melihat daftar file dan folder, membaca metadata dan isi file, mengunggah file backup, membandingkan hash, serta mengunduh file untuk pemulihan.</p>
+      <p>Scope Drive penuh diperlukan karena kumpulan backup mencakup file yang diunggah secara manual oleh pemilik sebelum OAuth client dikonfigurasi. Secara operasional, remote rclone dibatasi ke folder khusus Pakde Spill, tetapi scope OAuth itu sendiri lebih luas daripada folder tersebut.</p>
     </section>
 
     <section>
-      <h2>3. How Google data is used</h2>
+      <h2>3. Cara data Google digunakan</h2>
       <ul>
-        <li>Copy selected Pakde Spill project files to the owner's Google Drive.</li>
-        <li>List and compare backup files, sizes, timestamps, and available checksums.</li>
-        <li>Download selected files when the owner performs a restore.</li>
-        <li>Troubleshoot backup failures initiated by the owner.</li>
+        <li>Menyalin file proyek Pakde Spill yang dipilih ke Google Drive milik pemilik.</li>
+        <li>Melihat daftar serta membandingkan file backup, ukuran, waktu, dan checksum yang tersedia.</li>
+        <li>Mengunduh file yang dipilih ketika pemilik melakukan pemulihan.</li>
+        <li>Menelusuri penyebab kegagalan backup yang dijalankan oleh pemilik.</li>
       </ul>
-      <p>Google user data is not used for advertising, profiling, model training, credit decisions, surveillance, or any unrelated purpose.</p>
+      <p>Data pengguna Google tidak digunakan untuk iklan, pembuatan profil, pelatihan model, keputusan kredit, pengawasan, atau tujuan lain yang tidak berkaitan dengan fungsi tersebut.</p>
     </section>
 
     <section>
-      <h2>4. Storage and security</h2>
-      <p>Backup files remain in the owner's Google Drive. OAuth access and refresh tokens are stored locally in the owner's rclone configuration and are excluded from source control. The public website does not receive or store OAuth tokens, Drive file contents, or account credentials.</p>
+      <h2>4. Penyimpanan dan keamanan</h2>
+      <p>File backup tetap berada di Google Drive milik pemilik. Access token dan refresh token OAuth disimpan secara lokal di konfigurasi rclone milik pemilik dan dikecualikan dari source control. Situs publik ini tidak menerima atau menyimpan token OAuth, isi file Drive, maupun kredensial akun.</p>
     </section>
 
     <section>
-      <h2>5. Sharing and transfer</h2>
-      <p>Google user data is not sold, rented, shared with advertisers, or transferred to unrelated third parties. Data is processed only by Google Drive and the locally operated rclone client as necessary to perform the requested backup or restore operation.</p>
+      <h2>5. Pembagian dan transfer</h2>
+      <p>Data pengguna Google tidak dijual, disewakan, dibagikan kepada pengiklan, ataupun ditransfer kepada pihak ketiga yang tidak berkaitan. Data hanya diproses oleh Google Drive dan client rclone yang dioperasikan secara lokal sejauh diperlukan untuk menjalankan proses backup atau pemulihan yang diminta.</p>
     </section>
 
     <section>
-      <h2>6. Retention and deletion</h2>
-      <p>The owner controls the retention and deletion of backup files in Google Drive. Local OAuth credentials can be removed by deleting the rclone remote configuration. Access can also be revoked at any time from the Google Account security settings. Revoking access stops future API calls but does not automatically delete files already stored in Drive.</p>
+      <h2>6. Retensi dan penghapusan</h2>
+      <p>Pemilik mengendalikan masa penyimpanan dan penghapusan file backup di Google Drive. Kredensial OAuth lokal dapat dihapus dengan menghapus konfigurasi remote rclone. Akses juga dapat dicabut kapan saja melalui pengaturan keamanan Akun Google. Pencabutan akses menghentikan panggilan API berikutnya, tetapi tidak otomatis menghapus file yang sudah tersimpan di Drive.</p>
     </section>
 
     <section>
-      <h2>7. User control</h2>
-      <p>The owner may inspect, download, move, or delete backup files directly in Google Drive; stop scheduled operations; revoke the OAuth grant; rotate the OAuth client; or discontinue the integration completely.</p>
+      <h2>7. Kendali pengguna</h2>
+      <p>Pemilik dapat memeriksa, mengunduh, memindahkan, atau menghapus file backup langsung di Google Drive; menghentikan operasi terjadwal; mencabut izin OAuth; merotasi OAuth client; atau menghentikan seluruh integrasi.</p>
     </section>
 
     <section>
-      <h2>8. Limited Use</h2>
-      <p>The use of information received from Google APIs complies with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      <h2>8. Penggunaan Terbatas</h2>
+      <p>Penggunaan informasi yang diterima dari Google API mematuhi <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, termasuk persyaratan Limited Use.</p>
     </section>
 
     <section>
-      <h2>9. Website hosting data</h2>
-      <p>This policy website is hosted by GitHub Pages. The site itself uses no analytics, advertising trackers, cookies, forms, or JavaScript. GitHub may process visitor information such as IP addresses for security and service operation under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+      <h2>9. Data hosting situs</h2>
+      <p>Situs kebijakan ini di-host melalui GitHub Pages. Situs tidak menggunakan analytics, pelacak iklan, cookie, formulir, ataupun JavaScript. GitHub dapat memproses informasi pengunjung seperti alamat IP untuk keamanan dan pengoperasian layanan berdasarkan <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
     </section>
 
     <section>
-      <h2>10. Changes and contact</h2>
-      <p>This policy will be updated before the app materially changes its Google data access or use. Non-sensitive questions may be submitted through the repository's <a href="https://github.com/pakde-spill/pakde-spill.github.io/issues">public issue tracker</a>. Do not post credentials, tokens, personal data, or security-sensitive information in a public issue.</p>
+      <h2>10. Perubahan dan kontak</h2>
+      <p>Kebijakan ini akan diperbarui sebelum terjadi perubahan material pada akses atau penggunaan data Google oleh aplikasi. Pertanyaan yang tidak bersifat sensitif dapat dikirim melalui <a href="https://github.com/pakde-spill/pakde-spill.github.io/issues">issue tracker publik</a> milik repository. Jangan mengirim kredensial, token, data pribadi, atau informasi sensitif terkait keamanan melalui issue publik.</p>
     </section>
   </main>
 
   <footer>
-    <p>Pakde Spill · Personal project infrastructure</p>
-    <p><a href="/">Home</a> · <a href="/terms.html">Terms</a></p>
+    <p>Pakde Spill · Infrastruktur proyek pribadi</p>
+    <p><a href="/">Beranda</a> · <a href="/terms.html">Ketentuan</a></p>
   </footer>
 </body>
 </html>

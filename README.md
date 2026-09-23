@@ -1,44 +1,44 @@
-# Pakde Spill Public OAuth Information Site
+# Situs Informasi Publik OAuth Pakde Spill
 
-This public repository hosts the organization-level GitHub Pages site at [pakde-spill.github.io](https://pakde-spill.github.io/).
+Repository publik ini menjadi sumber situs GitHub Pages tingkat organisasi di [pakde-spill.github.io](https://pakde-spill.github.io/).
 
-## Purpose and role
+## Tujuan dan peran
 
-The site is the public identity and policy surface for the private `Pakde Spill rclone` desktop OAuth client. The client is a personal utility used by the project owner to back up, verify, and restore Pakde Spill files between a local workspace and the owner's Google Drive.
+Situs ini menjadi halaman identitas dan kebijakan publik untuk OAuth desktop client privat `Pakde Spill rclone`. Client tersebut adalah utilitas pribadi yang dipakai pemilik proyek untuk mencadangkan, memverifikasi, dan memulihkan file Pakde Spill antara workspace lokal dan Google Drive milik pemilik.
 
 ```mermaid
 flowchart LR
-    O[Owner's device] -->|rclone with OAuth| G[Owner's Google Drive]
-    S[Public information site] -. explains purpose and data practices .-> O
-    S -. supplies homepage and policy URLs .-> A[Google Auth Platform]
+    O[Perangkat pemilik] -->|rclone dengan OAuth| G[Google Drive milik pemilik]
+    S[Situs informasi publik] -. menjelaskan tujuan dan penggunaan data .-> O
+    S -. menyediakan URL beranda dan kebijakan .-> A[Google Auth Platform]
 ```
 
-The public site documents the integration. It does not proxy file transfers, receive OAuth tokens, or access Google Drive.
+Situs publik hanya menjelaskan integrasi tersebut. Situs ini tidak menjadi perantara transfer file, tidak menerima token OAuth, dan tidak mengakses Google Drive.
 
-## Why this repository is public
+## Mengapa repository ini bersifat publik
 
-Google OAuth production policies require a publicly accessible homepage and privacy policy. GitHub Pages on GitHub Free for organizations requires a public repository. This repository is therefore a deliberate exception to the Pakde Spill private-by-default policy.
+Kebijakan OAuth produksi Google mewajibkan beranda dan kebijakan privasi yang dapat diakses publik. GitHub Pages tingkat organisasi pada GitHub Free memerlukan repository publik. Karena itu, repository ini menjadi pengecualian yang disengaja dari kebijakan Pakde Spill bahwa semua repository bersifat privat secara default.
 
-## Contents
+## Isi repository
 
-| Path | Public URL | Role |
+| Path | URL publik | Peran |
 |---|---|---|
-| `index.html` | `/` | App identity, purpose, and plain-language data flow |
-| `privacy.html` | `/privacy.html` | Google user data access, use, storage, sharing, retention, and controls |
-| `terms.html` | `/terms.html` | Personal-use terms and limitations |
-| `assets/style.css` | n/a | Shared presentation only; no tracking or scripts |
-| `.nojekyll` | n/a | Serves the static files without a Jekyll build step |
+| `index.html` | `/` | Identitas aplikasi, tujuan, dan alur data dalam bahasa sederhana |
+| `privacy.html` | `/privacy.html` | Akses, penggunaan, penyimpanan, pembagian, retensi, dan kendali data pengguna Google |
+| `terms.html` | `/terms.html` | Ketentuan penggunaan pribadi dan batasan layanan |
+| `assets/style.css` | tidak berlaku | Tampilan bersama saja; tanpa pelacakan maupun script |
+| `.nojekyll` | tidak berlaku | Menyajikan file statis tanpa proses build Jekyll |
 
-## Public boundary
+## Batas informasi publik
 
-This repository may contain only public-facing policy text and static presentation assets. It must never contain:
+Repository ini hanya boleh memuat teks kebijakan untuk publik dan aset tampilan statis. Repository ini tidak boleh memuat:
 
-- OAuth client IDs or client secrets;
-- access tokens, refresh tokens, or `rclone.conf`;
-- Google Account details or private contact information;
-- Pakde Spill source code, chat history, research, media, or backup files;
-- analytics, advertising trackers, login forms, or data-collection forms.
+- OAuth client ID atau client secret;
+- access token, refresh token, atau `rclone.conf`;
+- detail Akun Google atau informasi kontak pribadi;
+- source code privat, histori chat, riset, media, atau file backup Pakde Spill;
+- analytics, pelacak iklan, formulir login, atau formulir pengumpulan data.
 
-## Maintenance
+## Pemeliharaan
 
-Keep the homepage, privacy policy, Google Auth Platform branding, and actual rclone behavior consistent. Update the policy before expanding scopes or changing how Google user data is used. Validate all links locally, commit with a clear message, and push to `main`; GitHub Pages then publishes the static site.
+Pastikan isi beranda, kebijakan privasi, konfigurasi branding Google Auth Platform, dan perilaku aktual rclone selalu konsisten. Perbarui kebijakan sebelum memperluas scope atau mengubah cara penggunaan data pengguna Google. Validasi semua tautan secara lokal, commit dengan pesan yang jelas, lalu push ke `main`; GitHub Pages kemudian menerbitkan situs statis tersebut.
