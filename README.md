@@ -17,7 +17,9 @@ Situs publik hanya menjelaskan integrasi tersebut. Situs ini tidak menjadi peran
 
 ## Mengapa repository ini bersifat publik
 
-Kebijakan OAuth produksi Google mewajibkan beranda dan kebijakan privasi yang dapat diakses publik. GitHub Pages tingkat organisasi pada GitHub Free memerlukan repository publik. Karena itu, repository ini menjadi pengecualian yang disengaja dari kebijakan Pakde Spill bahwa semua repository bersifat privat secara default.
+Google mewajibkan homepage dan kebijakan publik bagi aplikasi yang masuk definisi kebijakan *production app*, serta memerlukannya dalam proses verification untuk external production app. Client ini adalah unverified personal-use app, sehingga situs bukan dependency teknis rclone dan bukan bukti bahwa verification sudah selesai.
+
+Situs tetap dipertahankan sebagai pilihan konservatif untuk transparansi, kelengkapan branding, dan kesiapan bila audience atau kebutuhan verification berubah. GitHub Pages tingkat organisasi pada GitHub Free memerlukan repository publik. Karena itu, repository ini menjadi pengecualian sempit yang disengaja dari kebijakan Pakde Spill bahwa semua repository bersifat privat secara default.
 
 ## Isi repository
 
